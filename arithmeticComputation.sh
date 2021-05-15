@@ -12,4 +12,10 @@ computations[0]=$result1
 computations[1]=$result2
 computations[2]=$result3
 computations[3]=$result4
+index=0
+for i in ${computations[@]}
+do
+cpArray[((index++))]=$i
+done
 echo $result1 $result2 $result3 $result4
+
