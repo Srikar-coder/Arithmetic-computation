@@ -18,4 +18,5 @@ do
 cpArray[((index++))]=$i
 done
 echo $result1 $result2 $result3 $result4
-
+descendingOrder=($(printf '%s\n' "${cpArray[@]}" | sort -r)) 
+echo ${descendingOrder[*]}
